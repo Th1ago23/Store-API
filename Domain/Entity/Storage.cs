@@ -1,6 +1,7 @@
 ﻿using Domain.Enum;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,10 +10,12 @@ namespace Domain.Entity
 {
     public class Storage
     {
-        public Guid id {  get; private set; }
-        public Guid productId { get; private set; }
-        public Product Product { get; set; }
-        public int Quantity {  get; private set; }
+        [Key]
+        public Guid Id {  get; private set; }
+        public string Name { get; private set; }
+        public Guid? ProductId { get; private set; }
+        public Product? Product { get; set; }
+        public int? Quantity {  get; private set; }
 
 
 
