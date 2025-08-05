@@ -15,18 +15,10 @@ namespace Domain.Entity
         public Guid Id {  get; private set; } = Guid.NewGuid();
 
         public string Name { get; set; }
-        public int Quantity { get; set; }
         public double Price { get; set; }
         public Category categoryId;
         
         public Product()
-        {
-
-        }
-    
-    
+        { }
     }
 }
-
-
-//Produto (Id, Nome, Quantidade, Preço, CategoriaId)
