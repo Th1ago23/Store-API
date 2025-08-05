@@ -1,0 +1,15 @@
+Criar um projeto .NET Web API
+
+Adicionar modelos:
+
+Produto (Id, Nome, Quantidade, Preço, CategoriaId)
+
+Categoria (Id, Nome)
+
+Movimentação (Id, TipoEntradaSaida, ProdutoId, Quantidade, Data)
+
+Criar Controllers CRUD
+
+Configurar conexão com o banco local (ex: PostgreSQL ou SQL Server)
+
+Testar no Postman
