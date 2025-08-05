@@ -1,15 +1,44 @@
-Criar um projeto .NET Web API
+﻿Criar um projeto .NET Web API
 
 Adicionar modelos:
 
-Produto (Id, Nome, Quantidade, Pre�o, CategoriaId)
+Produto (Id, Nome, Quantidade, Preço, CategoriaId)
 
 Categoria (Id, Nome)
 
-Movimenta��o (Id, TipoEntradaSaida, ProdutoId, Quantidade, Data)
+Movimentação (Id, TipoEntradaSaida, ProdutoId, Quantidade, Data)
 
 Criar Controllers CRUD
 
-Configurar conex�o com o banco local (ex: PostgreSQL ou SQL Server)
+Configurar conexão com o banco local (ex: PostgreSQL ou SQL Server)
 
 Testar no Postman
+
+
+📦 ControleEstoque.Domain
+Entidades (Produto, Categoria, etc.)
+
+Interfaces (IProdutoRepository)
+
+Regras de negócio (ex: Produto.AdicionarEstoque())
+
+📦 ControleEstoque.Application
+DTOs
+
+Casos de uso / serviços de aplicação (ProdutoService, CadastrarProdutoHandler)
+
+Interfaces de serviços externos
+
+📦 ControleEstoque.Infrastructure
+Implementação dos repositórios (EFCore)
+
+Banco de dados (DbContext)
+
+Serviços de terceiros (ex: envio de email, cache com Redis)
+
+📦 ControleEstoque.API
+Controllers
+
+Injeção de dependência (DI)
+
+Configurações (Swagger, JWT, etc.)
