@@ -10,9 +10,5 @@ namespace Domain.Interface.Repository
 {
     public interface IStorageRepository
     {
-        Task <Storage> AddStorage (Storage storage);
-        Task <bool> DeleteStorage (Guid id);
-        Task<Storage> GetStorage(Guid id);
-        
     }
 }
