@@ -16,5 +16,6 @@ namespace Infrastructure
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Handle> Handles { get; set; }
+        public DbSet<Storage> Storages { get; set; }
     }
 }

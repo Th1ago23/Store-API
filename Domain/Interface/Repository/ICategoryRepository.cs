@@ -9,7 +9,7 @@ namespace Domain.Interface.Repository
 {
     public interface ICategoryRepository
     {
-        Task<Category> Create(Category category);
+        Task Create(Category category);
         Task<bool> Delete (int id);
         
     }
